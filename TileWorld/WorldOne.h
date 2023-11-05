@@ -21,24 +21,36 @@
 #include "TileType.h"
 #include "Map.h"
 
-constexpr uint8_t map0Width = 28;
-constexpr uint8_t map0Height = 4;
+constexpr uint8_t map0Width = 14;
+constexpr uint8_t map0Height = 8;
 
-// Modified version of a level by @Johnnydb/@JohnnydCoder
 const TileType map0Data[map0Height][map0Width] PROGMEM =
 {
-	{
-		TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None,TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None
+   {
+		TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None,TileType::None, TileType::None, TileType::None, TileType::None, TileType::None
+	},
+  {
+		TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None,TileType::None, TileType::None, TileType::None, TileType::None, TileType::None
+	},
+  {
+		TileType::Grass, TileType::Grass, TileType::None, TileType::Grass, TileType::None, TileType::Grass, TileType::Grass, TileType::Grass, TileType::Grass,TileType::None, TileType::None, TileType::None, TileType::None, TileType::None
+	},
+  {
+		TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::Dirt,TileType::None, TileType::Grass, TileType::None, TileType::None, TileType::None
 	},
 	{
-		TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::Grass, TileType::None, TileType::None, TileType::None,TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None
+		TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None,TileType::None, TileType::Dirt, TileType::Grass, TileType::None, TileType::None
 	},
 	{
-		TileType::None, TileType::None, TileType::None, TileType::None, TileType::Grass, TileType::Dirt, TileType::None, TileType::None, TileType::Grass,TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None,TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::None
+		TileType::None, TileType::None, TileType::None, TileType::None, TileType::None, TileType::Grass, TileType::None, TileType::None, TileType::None,TileType::None, TileType::None, TileType::None, TileType::None, TileType::Grass
 	},
 	{
-		TileType::Grass,TileType::Grass,TileType::Grass, TileType::Grass,TileType::Dirt,TileType::Dirt,TileType::Grass,TileType::Grass,TileType::Dirt,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass,TileType::Grass
+		TileType::None, TileType::None, TileType::None, TileType::None, TileType::Grass, TileType::Dirt, TileType::None, TileType::None, TileType::Grass,TileType::None, TileType::None, TileType::None, TileType::Grass, TileType::Dirt
+	},
+	{
+		TileType::Grass, TileType::Grass, TileType::Grass, TileType::Grass, TileType::Dirt, TileType::Dirt, TileType::Grass, TileType::Grass, TileType::Dirt, TileType::Grass, TileType::Grass, TileType::Grass, TileType::Dirt, TileType::Dirt
 	}
 };
+
 
 const Map map0 PROGMEM = Map(map0Data);
