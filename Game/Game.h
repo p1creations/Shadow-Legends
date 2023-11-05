@@ -1,5 +1,7 @@
 #pragma once
 
+// Copyright (C) 2023 p1skates (@havokgamers)
+// #includes changes WorldOne.h
 //
 // Copyright (C) 2019 Pharap (@Pharap)
 //
