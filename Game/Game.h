@@ -22,11 +22,16 @@
 #include <stdint.h>
 #include <avr/pgmspace.h>
 
-#include "TileImages.h"
-#include "TileType.h"
-#include "WorldOne.h"
-#include "Entity.h"
-#include "Camera.h"
+#include "GameEngine
+/TileImages.h"
+#include "GameEngine
+/TileType.h"
+#include "GameEngine
+/WorldOne.h"
+#include "GameEngine
+/Entity.h"
+#include "GameEngine
+/Camera.h"
 
 class Game
 {
